@@ -10,7 +10,7 @@
 </div>
 ---
 
-Visualize music as connections. Paired with [Deezer Graph API](https://github.com/tdambrin/deezer-graph)
+Visualize music as connections. Paired with [Deezer Graph API](https://github.com/tdambrin/deezer-graph-api)
 
 <img src="./doc/assets/Deezer%20Graph%20Demo%20(Saturn%20SZA).gif" style="border-radius: 5px" align="center">
 
