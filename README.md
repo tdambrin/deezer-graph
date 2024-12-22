@@ -8,6 +8,7 @@
         <img src="https://img.shields.io/badge/vue-3.2.13-green.svg" alt="Vue JS version" />
     </a>
 </div>
+
 ---
 
 Visualize music as connections. Paired with [Deezer Graph API](https://github.com/tdambrin/deezer-graph-api)
