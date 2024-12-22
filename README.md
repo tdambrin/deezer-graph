@@ -1,21 +1,22 @@
 # Deezer Graph Search: Connect artists, albums and tracks
 
-<a href="LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?" alt="Software License" />
-</a>
-<a href="Vue">
-    <img src="https://img.shields.io/badge/vue-3.2.13-green.svg" alt="Vue JS version" />
-</a>
-
+<div align="center">
+    <a href="LICENSE">
+        <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?" alt="Software License" />
+    </a>
+    <a href="Vue">
+        <img src="https://img.shields.io/badge/vue-3.2.13-green.svg" alt="Vue JS version" />
+    </a>
+</div>
 ---
 
 Visualize music as connections. Paired with [Deezer Graph API](https://github.com/tdambrin/deezer-graph)
 
-![demo](./doc/assets/Deezer%20Graph%20Demo%20(Saturn%20SZA).gif)
+<img src="./doc/assets/Deezer%20Graph%20Demo%20(Saturn%20SZA).gif" style="border-radius: 5px" align="center">
 
 ## How it works
 
-<div>
+<div align="center">
     <h3>Enter search keywords to get a graph</h3>
     <h4><i>Graph properties</i></h3>
     <p>

@@ -26,7 +26,7 @@
       style="border-radius: 50%;"
       ></a>
       <a class='about-link' href='https://tdambrin.github.io'>about</a>
-      <a class='bold' href='https://github.com/tdambrin/sp-graph'>source code</a>
+      <a class='bold' href='https://github.com/tdambrin/deezer-graph'>source code</a>
     </div>
     <div id="graph-container">
       <NetworkVue ref="graph_net" id="graph"
