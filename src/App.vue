@@ -5,7 +5,7 @@
   </div>
   <div id="app" v-show="!deprecated">
     <div class="query-container">
-      <form v-on:submit.prevent="search" class='search-box' v-bind:style="[isMobile ? {'width': '320px'} : {'width': '800px'}]">
+      <form v-on:submit.prevent="search" class='search-box' v-bind:style="[isMobile ? {'width': '320px'} : {'width': '350px'}]">
         <span @click.prevent='forwardFocus'>Search Deezer</span>
         <query-input
           class='query-input'

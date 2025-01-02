@@ -3,9 +3,9 @@
         <input class='search-input' @keyup.enter="$emit('inputEnter')"
         v-model='searchValue' @input="$emit('update:modelValue', $event.target.value)"
         type='text' :placeholder='placeholder' autofocus ref='input'>
-        <span v-show="!isMobile" class="indicator"> with types </span>
+        <span v-show="!isMobile && advanced" class="indicator"> only include types </span>
         <multiselect 
-        v-show="!isMobile"
+        v-show="!isMobile && advanced"
         id="type-selector" 
         v-model="selectedTypes" 
         :options="allTypes" 
@@ -46,6 +46,7 @@
       selectedTypes: [
             {name:'album'},{ name:'artist'}, {name: 'track'}
         ],
+      advanced: false,
     }),
     components: {
       Multiselect,
