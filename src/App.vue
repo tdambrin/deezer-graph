@@ -112,7 +112,6 @@ function handleTaskResult(context, body) {
   context.$refs.graph_net.addNodes(newNodes);
   var newEdges = body?.edges ?? [];
   context.$refs.graph_net.addEdges(newEdges);
-  setTimeout(stabilize, 2000, context);
 }
 
 async function checkStatus(context, taskId, initialDelay, nextDelay) {
@@ -158,7 +157,7 @@ async function search() {
     });
   appState.progress.doWork();
   handleTaskResult(this, respBody);
-  stabilize(this);
+  setTimeout(stabilize, 2000, this);
   checkStatus(this, respBody.task_id, 2000, 2000);
 }
 
