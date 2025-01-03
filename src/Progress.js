@@ -13,7 +13,7 @@ export default class Progress {
       this.layout = {
         iteration: 0
       };
-      this.working = true
+      this.working = 0
       this.errors = [];
     }
   
@@ -39,16 +39,16 @@ export default class Progress {
     }
 
     doWork () {
-      this.working = true;
+      this.working += 1;
     }
   
     done() {
-      this.working = false;
+      this.working = Math.max(0, this.working - 1);
     }
 
     fail( e ) {
         this.errors.push(e);
-        this.working = false;
+        this.working = Math.max(0, this.working - 1);
     }
   
     downloadError(message) {
@@ -62,6 +62,6 @@ export default class Progress {
       this.download.currentWord = '';
       this.layout.iteration = 0;
       this.message = '';
-      this.working = true;
+      this.working = 0;
     }
   }

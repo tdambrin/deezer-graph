@@ -14,7 +14,14 @@
           ref='queryInput'
           :isMobile="isMobile"
         ></query-input>
-        <a type='submit' class='search-submit' href='#' @click.prevent='search'>Go</a>
+        <a v-show="!isLoading" type='submit' class='search-submit' href='#' @click.prevent='search'>Go</a>
+        <bounce-loader
+          v-show="isLoading"
+          :loading="loading"
+          :color="'#ff673d'"
+          :size="'20px'"
+          style="justify-content: center; align-items: center; display: flex; margin-right: 10px;"
+          ></bounce-loader>
       </form>
     </div>
     <div class='about-line'>
@@ -65,6 +72,7 @@
 <script>
 import NetworkVue from './components/Network.vue';
 import QueryInput from './components/QueryInput';
+import BounceLoader from 'vue-spinner/src/BounceLoader.vue'
 import { asyncTimeout, dzgAPIGet } from './lib/utils'
 import { SESSION_ID_KEY } from "@/Constants";
 import {getAppState } from './appState.js';
@@ -274,6 +282,7 @@ export default {
   components: {
     NetworkVue,
     QueryInput,
+    BounceLoader,
   },
   data() {
     return {
@@ -285,7 +294,7 @@ export default {
   },
   computed: {
     isLoading() {
-      return appState.progress.working;
+      return appState.progress.working > 0;
     },
     isMobile() {
       if (screen.width <= 760) {
