@@ -9,6 +9,11 @@
     </a>
 </div>
 
+## Links
+
+Try it here: [deezer-graph](https://tdambrin.github.io/deezer-graph) <br>
+Read the medium article: [Discover new connections within music](https://medium.com/@thomas.dambrin/discover-new-connections-within-music-b49d3ae65470)
+
 ---
 
 Visualize music as connections. Paired with [Deezer Graph API](https://github.com/tdambrin/deezer-graph-api)
